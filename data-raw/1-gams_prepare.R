@@ -1,4 +1,3 @@
-library(dplyr)
 library(igraph)
 library(magrittr)
 
@@ -27,8 +26,8 @@ linhas_parameter %<>%
   paste("\t  c", n_comarcas, " ", perc_processos[n_comarcas], " /;\n", sep = "")
 dist_comarcas <- data_varas[1:n_comarcas, 3:(n_comarcas+2)] %>%
   as.matrix() %>%
-  graph.adjacency(mode="undirected") %>%
-  distances()
+  igraph::graph.adjacency(mode="undirected") %>%
+  igraph::distances()
 
 linhas_parameter_2 <- "TABLE d(c,v) distancia entre comarcas\n"
 for (jj in 0:(n_comarcas %/% 10)) {

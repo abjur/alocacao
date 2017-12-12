@@ -1,8 +1,15 @@
 Package: alocacao
-Title: What the Package Does (one line, title case)
+Title: Run GAMS Integer Programming Model To Allocate Courts
 Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Authors@R: c(
+    person("Fernando", "Correa", , "fcorrea@abj.org.br", role = c("aut", "cre")),
+    person("ABJ", role = c("cph", "fnd"))
+  )
+Description: This package has no functions and is used to run an GAMS integer 
+    programming model to allocate courts
 Depends: R (>= 3.2.4)
-License: What license is it under?
+License: GPL-3 + file LICENSE
 LazyData: true
+RoxygenNote: 6.0.1
+Imports: magrittr,
+    igraph
