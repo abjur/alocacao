@@ -1,3 +1,6 @@
 .Rproj.user
 .Rhistory
 .RData
+data-raw/linux_x64_64_sfx.exe
+data-raw/gams24.9_linux_x64_64_sfx
+data-raw/gams_package.tar.gz
