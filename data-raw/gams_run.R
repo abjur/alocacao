@@ -1,5 +1,5 @@
 # Run GAMS model
-path = "data-raw"
+path <-  "data-raw"
 gams_path <- paste0(path, "/gams24.9_linux_x64_64_sfx/")
 system(sprintf("chmod +x -R %s", gams_path))
 gdxrrw::igdx(normalizePath(paste0(path, "/gams24.9_linux_x64_64_sfx")))
