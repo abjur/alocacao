@@ -6,7 +6,7 @@ Authors@R: c(
     person("ABJ", role = c("cph", "fnd"))
   )
 Description: This package has no functions and is used to run an GAMS integer 
-    programming model to allocate courts
+    programming model to allocate courts.
 Depends: R (>= 3.2.4)
 License: GPL-3 + file LICENSE
 LazyData: true
